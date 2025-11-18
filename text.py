@@ -37,11 +37,11 @@ time.sleep(2)
 
 # Enter username
 username = driver.find_element(By.XPATH, "/html/body/app-root/app-home/div[3]/app-login/p-dialog[1]/div/div/div[2]/div[2]/div/div[2]/div/div[2]/form/div[2]/input")
-username.send_keys("AnshRas221")
+username.send_keys("Username")
 
 # Enter password 
 password = driver.find_element(By.XPATH, "/html/body/app-root/app-home/div[3]/app-login/p-dialog[1]/div/div/div[2]/div[2]/div/div[2]/div/div[2]/form/div[3]/input")
-password.send_keys("ANSH12345")
+password.send_keys("Password")
 
 cap = driver.find_element(By.XPATH, "/html/body/app-root/app-home/div[3]/app-login/p-dialog[1]/div/div/div[2]/div[2]/div/div[2]/div/div[2]/form/div[5]/div/app-captcha/div/div/div[2]/span[1]/img")
 data_uri  = cap.get_attribute('src')
@@ -88,4 +88,5 @@ if results:
 else:
     print("No text detected.")
 time.sleep(2000)
+
 
