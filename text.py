@@ -7,7 +7,6 @@ import base64
 from pathlib import Path
 from selenium.webdriver.chrome.options import Options
 import re
-import easyocr
 import cv2
 import matplotlib.pyplot as plt
 """
@@ -89,3 +88,4 @@ if results:
 else:
     print("No text detected.")
 time.sleep(2000)
+
